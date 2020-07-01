@@ -14,7 +14,7 @@ app.use(express.json());
 })();
 app.get('/',(req,res)=>{
     res.send("welcome to home page");
-})
+});
 app.post('/api/orders',(req,res)=>{
     insertOrders(req.body)
 })
