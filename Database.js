@@ -1,6 +1,5 @@
-require('dotenv').config({path:'../ecom_config.env'});
+require('dotenv').config();
 const mongoose=require('mongoose');
-// const {MongoClient}=require('mongodb')
 
  
 const userSchema=new mongoose.Schema({
