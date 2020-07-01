@@ -9,7 +9,9 @@ app.use(cors());
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
-
+( function(){
+ connectToDB();
+})();
 app.get('/',(req,res)=>{
     res.send("welcome to home page");
 });
