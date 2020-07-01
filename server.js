@@ -29,5 +29,5 @@ app.post("/api/login",async (req,res)=>{
 res.send(await login(req.body));
     });
 
-const PORT=5000 || process.env.PORT;
-app.listen(PORT,"0.0.0.0",()=>console.log(`web service running on port ${PORT}`));
+
+app.listen(process.env.PORT,"0.0.0.0",()=>console.log(`web service running on port ${PORT}`));
