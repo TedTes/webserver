@@ -30,4 +30,4 @@ res.send(await login(req.body));
     });
 
 const port=3200 || process.env.PORT;
-app.listen(port,()=>console.log(`web service running on port ${port}`));
+app.listen(port,"0.0.0.0",()=>console.log(`web service running on port ${port}`));
