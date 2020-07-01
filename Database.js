@@ -56,7 +56,6 @@ console.log("error in database saving orders"+e);
  
 
 async function register(account){
-//  await db.collection("users").insertOne(account);
 const user=await new User(account);
 try{
     return user.save();
